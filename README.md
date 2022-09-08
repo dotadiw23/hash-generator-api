@@ -2,24 +2,22 @@
 
 ## Configuración e instalación
   * Ejecutar en una terminal ***con permisos de administrador***:
-      ```bash
-        # --- GNU lINUX ---
-        $ pip3 install virtualenv
-        # --- Windows ---
-        $ pip install virtualenv
-      ```
+
   * En la ruta donde se clona el proyecto ejecutar:
       ```bash
-        $ virtualenv venv --python={version ej:"3.9"}
+        # GNU / Linux
+        $ python3 -m venv venv 
+        # Windows
+        $ python -m venv venv
       ```
       ```bash
         # GNU / Linux
         $ source venv/bin/activate
-        # Windows
+        # Windows 
         $ .\venv\Scripts\activate
       ```
       ```bash
-        # --- GNU lINUX ---
-        (venv)$ pip3 install -r requiments.txt
-        # --- Windows ---
-        (venv)$ pip install -r requiments.txt
+        # GNU Linux 
+        (venv)$ pip3 install -r requirements.txt
+        # Windows 
+        (venv)$ pip install -r requirements.txt
