@@ -1,11 +1,7 @@
-import base64
-import hashlib
-import os
 from hashing import algorithms
 from flask import make_response, request
 from flask_apispec import MethodResource, doc, use_kwargs, marshal_with
 from flask_restful import Resource
-from marshmallow import fields
 
 from http import HTTPStatus
 

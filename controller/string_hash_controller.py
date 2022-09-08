@@ -1,7 +1,7 @@
 from http import HTTPStatus
 
 from flask import make_response, request
-from flask_apispec import MethodResource, use_kwargs, doc, marshal_with
+from flask_apispec import MethodResource, doc, marshal_with
 from flask_restful import Resource
 
 from dto.generar_hash_response_dto import GenerarHashResponseDto
