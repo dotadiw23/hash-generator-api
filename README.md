@@ -13,8 +13,10 @@
       ```bash
         # GNU / Linux
         $ source venv/bin/activate
-        # Windows 
-        $ .\venv\Scripts\activate
+        # Windows (PowerShell)
+        $ .\venv\Scripts\activate.ps1
+        # Windows (CMD)
+        $ .\venv\Scripts\activate.bat
       ```
       ```bash
         # GNU Linux 
