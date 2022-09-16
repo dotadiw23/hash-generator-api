@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 
 from app.urls import register_apis
 
@@ -12,4 +13,7 @@ def create_app(name: str) -> Flask:
     """
     app = Flask(name)
     register_apis(app)
+    cors = CORS(app)
+    app.config['CORS_HEADERS'] = 'Content-Type'
     return app
+    

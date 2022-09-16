@@ -11,3 +11,4 @@ venv/
 *.zip
 *.7zip
 *.tar
+.vscode/
