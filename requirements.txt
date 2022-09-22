@@ -3,3 +3,5 @@ Flask
 Flask-RESTful
 
 flask-apispec
+
+flask-cors

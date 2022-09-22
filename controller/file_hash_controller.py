@@ -19,11 +19,11 @@ class FileHashController(MethodResource, Resource):
             return make_response({'hash': None, 'descripcion' : 'Faltan parámetros en el cuerpo de la petición'}, HTTPStatus.BAD_REQUEST)
         try:
             if metodo.upper() == 'MD5':
-                return make_response(algorithms.generar_md5(request_payload), HTTPStatus.CREATED)
+                return make_response(algorithms.generar_md5_from_file(request_payload), HTTPStatus.CREATED)
             elif metodo.upper() == 'SHA1':
-                return make_response(algorithms.generar_sha1(request_payload), HTTPStatus.CREATED)
+                return make_response(algorithms.generar_sha1_from_file(request_payload), HTTPStatus.CREATED)
             elif metodo.upper() == 'SHA256':
-                return make_response(algorithms.generar_sha256(request_payload), HTTPStatus.CREATED)
+                return make_response(algorithms.generar_sha256_from_file(request_payload), HTTPStatus.CREATED)
         except UnicodeDecodeError:
             return make_response(
                 {
