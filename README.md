@@ -23,3 +23,5 @@
         (venv)$ pip3 install -r requirements.txt
         # Windows 
         (venv)$ pip install -r requirements.txt
+   
+   * **Nota**: El archivo debe ser un texto plano
